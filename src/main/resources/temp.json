@@ -1,0 +1,18 @@
+{
+  "city": "Marseille",
+  "data": {
+    "averagePrices": [
+      {
+        "typeB": "Villa",
+        "averagePrice": 2262642.0
+      }
+    ],
+    "salesCounts": 1,
+    "roomPriceAnalysis": [
+      {
+        "numberOfRooms": 5,
+        "averagePrice": 2262642.0
+      }
+    ]
+  }
+}
