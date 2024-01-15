@@ -2,7 +2,9 @@ package org.project.scala
 package model
 
 import org.project.scala.model.Cities.City
-import zio.json.{DeriveJsonEncoder, JsonDecoder, JsonEncoder}
+import zio.json.{DeriveJsonDecoder, DeriveJsonEncoder, JsonDecoder, JsonEncoder}
+
+import java.time.{LocalDate, LocalDateTime}
 
 case class SaleData(
                      id: String,
@@ -12,43 +14,63 @@ case class SaleData(
                      area: Int,
                      numberOfRooms: Int,
                      price: Int,
-                     saleDate: String
+                     saleDate: LocalDateTime
                    )
 
+case class TopCities(
+                    firstCity: CityStatistics,
+                    secondCity: CityStatistics,
+                    thirdCity: CityStatistics,
+                    )
+
+case class DetailedCity(
+                       city: City,
+                       comment: String
+                       )
 object SaleData {
   implicit val encoder: JsonEncoder[SaleData] = DeriveJsonEncoder.gen[SaleData]
 }
 
 case class CityStatistic(
-                          city: String,
                           typeB: String,
                           averagePrice: Double
                         )
+
+case class CityRoomStatistic(
+                              numberOfRooms: Int,
+                              averagePrice: Double
+                            )
+
+case class CityData(
+                     averagePrices: List[CityStatistic],
+                     salesCounts: Int,
+                     roomPriceAnalysis: List[CityRoomStatistic]
+                   )
+
+case class CityStatistics(
+                           city: City,
+                           data: CityData,
+                         )
 
 object CityStatistic {
   implicit val encoder: JsonEncoder[CityStatistic] = DeriveJsonEncoder.gen[CityStatistic]
 }
 
-case class CityRoomStatistic(
-                              city: String,
-                              numberOfRooms: Int,
-                              averagePrice: Double
-                            )
-
 object CityRoomStatistic {
   implicit val encoder: JsonEncoder[CityRoomStatistic] = DeriveJsonEncoder.gen[CityRoomStatistic]
 }
 
-case class CityStatistics(
-                           averagePrices: List[CityStatistic],
-                           salesCounts: Map[String, Int],
-                           roomPriceAnalysis: List[CityRoomStatistic]
-                         )
+object CityData {
+  implicit val encoder: JsonEncoder[CityData] = DeriveJsonEncoder.gen[CityData]
+}
+
+object TopCities {
+  implicit val encoder: JsonEncoder[TopCities] = DeriveJsonEncoder.gen[TopCities]
+}
 
 object CityStatistics {
   implicit val encoder: JsonEncoder[CityStatistics] = DeriveJsonEncoder.gen[CityStatistics]
 }
-
 object Cities {
 
   opaque type City = String

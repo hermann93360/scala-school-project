@@ -5,6 +5,7 @@ import zio.stream.ZStream
 import com.github.tototoshi.csv.*
 import org.project.scala.model.Cities.City
 import org.project.scala.model.SaleData
+import zio.Config.LocalDateTime
 import zio.ZIO
 
 import java.io.File
@@ -24,7 +25,8 @@ object CsvReader {
             line("Surface").toInt,
             line("Nombre de Chambres").toInt,
             line("Prix").toInt,
-            line("Date Vente")
+            LocalDateTime.parse(line("Date Vente")).getOrElse(null)
+            
           )
         }
       }
