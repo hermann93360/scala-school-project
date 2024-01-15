@@ -10,6 +10,7 @@ import org.project.scala.domain.model.Cities.City.unapply
 import com.github.tototoshi.csv.{CSVReader, defaultCSVFormat}
 import org.project.scala.domain.model
 import org.project.scala.domain.model.{CityData, CityRoomStatistic, CityStatistic, CityStatistics, SaleData, TopCities}
+import org.project.scala.domain.usecase.SaleAnalyzeUseCase
 import zio.*
 import zio.Console.{printLine, readLine}
 import zio.stream.*
@@ -18,14 +19,43 @@ import java.io.{File, StringReader}
 import scala.collection.immutable.Map
 import scala.util.{Try, Using}
 
-case class SaleService(saleRepository: SaleRepository) {
+case class SaleAnalyzeService(saleRepository: SaleRepository) extends SaleAnalyzeUseCase{
 
-  private val saleDataStream = getStreamOfSaleData(saleRepository.getSaleData)
+  override def findTopCities(criteria: Criteria): ZIO[Any, Throwable, TopCities] = {
+    val filteredStream = filterSales(getStreamOfSaleData(saleRepository.getSaleData), criteria)
+    for {
+      citySalesMap <- groupSalesByCity(filteredStream)
+      cityStats <- ZIO.foreach(citySalesMap.toList) { case (city, sales) => calculateCityStatistics(city, sales) }
+      topCities = cityStats
+        .collect { case (cityStat, combinedAverage) if combinedAverage <= criteria.budget => (cityStat, combinedAverage) }
+        .sortBy(_._2)
+        .take(3)
+    } yield model.TopCities(
+      topCities.headOption.map(_._1),
+      topCities.lift(1).map(_._1),
+      topCities.lift(2).map(_._1)
+    )
+  }
 
+  override def calculateStatistics(): ZIO[Any, Throwable, List[CityStatistics]] = {
+    getStreamOfSaleData(saleRepository.getSaleData)
+      .run(ZSink.foldLeft(Map.empty[String, List[SaleData]])((acc, sale) =>
+        acc.updated(unapply(sale.city), sale :: acc.getOrElse(unapply(sale.city), List.empty))))
+      .flatMap { citySalesMap =>
+        ZIO.foreach(citySalesMap.toList) { case (cityName, sales) =>
+          for {
+            averagePrices <- calculateAveragePrice(ZStream.fromIterable(sales), City(cityName))
+            salesCount <- ZIO.succeed(sales.length)
+            roomPriceAnalysis <- calculatePriceByNumberOfRooms(ZStream.fromIterable(sales), City(cityName))
+          } yield CityStatistics(City(cityName), CityData(averagePrices, salesCount, roomPriceAnalysis))
+        }
+      }
+  }
+  
   private def getStreamOfSaleData(salesData: List[SaleData]): ZStream[Any, Throwable, SaleData] = {
     ZStream.fromIterable(salesData)
   }
-  
+
   private def calculateAveragePrice(stream: ZStream[Any, Throwable, SaleData], city: City): ZIO[Any, Throwable, List[CityStatistic]] = {
     stream
       .filter(_.city.equals(city))
@@ -64,21 +94,6 @@ case class SaleService(saleRepository: SaleRepository) {
     }
   }
 
-  def calculateStatistics(): ZIO[Any, Throwable, List[CityStatistics]] = {
-    saleDataStream
-      .run(ZSink.foldLeft(Map.empty[String, List[SaleData]])((acc, sale) =>
-        acc.updated(unapply(sale.city), sale :: acc.getOrElse(unapply(sale.city), List.empty))))
-      .flatMap { citySalesMap =>
-        ZIO.foreach(citySalesMap.toList) { case (cityName, sales) =>
-          for {
-            averagePrices <- calculateAveragePrice(ZStream.fromIterable(sales), City(cityName))
-            salesCount <- ZIO.succeed(sales.length)
-            roomPriceAnalysis <- calculatePriceByNumberOfRooms(ZStream.fromIterable(sales), City(cityName))
-          } yield CityStatistics(City(cityName), CityData(averagePrices, salesCount, roomPriceAnalysis))
-        }
-      }
-  }
-
   private def calculateStatisticsByCity(city: City, stream: ZStream[Any, Throwable, SaleData]): ZIO[Any, Throwable, CityStatistics] = {
     for {
       averagePrices <- calculateAveragePrice(stream, city)
@@ -96,7 +111,7 @@ case class SaleService(saleRepository: SaleRepository) {
         sale.area >= filter.surface.min &&
         sale.area <= filter.surface.max
     }
-    
+
   private def groupSalesByCity(stream: ZStream[Any, Throwable, SaleData]): ZIO[Any, Throwable, Map[City, List[SaleData]]] =
     stream.runFold(Map.empty[City, List[SaleData]])((acc, sale) =>
       acc.updated(sale.city, sale :: acc.getOrElse(sale.city, List.empty)))
@@ -108,26 +123,10 @@ case class SaleService(saleRepository: SaleRepository) {
       avgPriceByRoom = cityStat.data.roomPriceAnalysis.map(_.averagePrice).sum / cityStat.data.roomPriceAnalysis.size.max(1)
     } yield (cityStat, (avgPriceByType + avgPriceByRoom) / 2)
 
-  def findTopCities(dataFilter: Criteria): ZIO[Any, Throwable, TopCities] = {
-    val filteredStream = filterSales(saleDataStream, dataFilter)
-    for {
-      citySalesMap <- groupSalesByCity(filteredStream)
-      cityStats <- ZIO.foreach(citySalesMap.toList) { case (city, sales) => calculateCityStatistics(city, sales) }
-      topCities = cityStats
-        .collect { case (cityStat, combinedAverage) if combinedAverage <= dataFilter.budget => (cityStat, combinedAverage) }
-        .sortBy(_._2)
-        .take(3)
-    } yield model.TopCities(
-      topCities.headOption.map(_._1),
-      topCities.lift(1).map(_._1),
-      topCities.lift(2).map(_._1)
-    )
-  }
-
 }
 
-object SaleService {
-  def init: SaleService = {
-    SaleService(SaleCsvData())
+object SaleAnalyzeService {
+  def initWith(saleRepository: SaleRepository): SaleAnalyzeService = {
+    SaleAnalyzeService(saleRepository)
   }
 }

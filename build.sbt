@@ -1,4 +1,5 @@
 import scala.collection.immutable.Seq
+
 val zioVersion = "2.0.20"
 val zioJsonVersion = "0.5.0"
 val zioHttpVersion = "3.0.0-RC2"
@@ -17,6 +18,8 @@ lazy val root = (project in file("."))
       "dev.zio" %% "zio-streams" % zioVersion,
       "dev.zio" %% "zio-http" % zioHttpVersion,
       "dev.zio" %% "zio-json" % zioJsonVersion,
-      "com.github.tototoshi" %% "scala-csv" % scalaCsvVersion
+      "com.github.tototoshi" %% "scala-csv" % scalaCsvVersion,
+      "org.scalatest" %% "scalatest" % "3.2.15" % "test",
+      "dev.zio" %% "zio-test" % "2.0.15" % Test
     )
   )

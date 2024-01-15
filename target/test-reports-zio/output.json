@@ -1,0 +1,45 @@
+{
+  "results": [
+    {
+       "name" : "test_case_1539982028/CriteriaSpec/check should fail for numberOfRooms with min less than 1 or max greater than 99",
+       "status" : "Success",
+       "durationMillis" : "-177599088",
+       "annotations" : "",
+       "fullyQualifiedClassName" : "test_case_1539982028",
+       "labels" : ["CriteriaSpec", "check should fail for numberOfRooms with min less than 1 or max greater than 99"]
+    },
+    {
+       "name" : "test_case_1539982028/CriteriaSpec/check should fail for budget less than or equal to 5000",
+       "status" : "Success",
+       "durationMillis" : "-177599088",
+       "annotations" : "",
+       "fullyQualifiedClassName" : "test_case_1539982028",
+       "labels" : ["CriteriaSpec", "check should fail for budget less than or equal to 5000"]
+    },
+    {
+       "name" : "test_case_1539982028/CriteriaSpec/check should succeed for valid criteria",
+       "status" : "Success",
+       "durationMillis" : "-177599088",
+       "annotations" : "",
+       "fullyQualifiedClassName" : "test_case_1539982028",
+       "labels" : ["CriteriaSpec", "check should succeed for valid criteria"]
+    },
+    {
+       "name" : "test_case_1539982028/CriteriaSpec/check should fail for list of 4 or fewer cities",
+       "status" : "Success",
+       "durationMillis" : "-177599088",
+       "annotations" : "",
+       "fullyQualifiedClassName" : "test_case_1539982028",
+       "labels" : ["CriteriaSpec", "check should fail for list of 4 or fewer cities"]
+    },
+    {
+       "name" : "test_case_1539982028/CriteriaSpec/check should fail for surface with min less than 1 or max greater than 2000",
+       "status" : "Success",
+       "durationMillis" : "-177599295",
+       "annotations" : "",
+       "fullyQualifiedClassName" : "test_case_1539982028",
+       "labels" : ["CriteriaSpec", "check should fail for surface with min less than 1 or max greater than 2000"]
+    }
+
+  ]
+}
