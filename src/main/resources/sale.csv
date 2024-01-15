@@ -1,0 +1,512 @@
+ID,Vente,Adresse,TypeB,Surface,Prix,Nombre de Chambres,Date Vente
+V1,Avenue de la Liberté 45,Marseille,Villa,417,2262642,5,2020-08-27
+V2,Chemin des Vignes 95,Bordeaux,Maison,117,830934,1,2020-02-08
+V3,Chemin des Vignes 60,Lyon,Maison,128,660096,4,2021-03-04
+V4,Chemin des Vignes 42,Bordeaux,Appartement,70,263690,1,2023-07-25
+V5,Boulevard Victor Hugo 90,Nice,Appartement,37,183964,1,2022-06-09
+V6,Avenue de la Liberté 30,Nantes,Appartement,56,380240,1,2021-11-17
+V7,Boulevard Victor Hugo 38,Montpellier,Appartement,106,493112,3,2020-10-01
+V7,Boulevard Victor Hugo 38,Montpellier,Villa,106,493112,4,2020-10-01
+V8,Chemin des Vignes 63,Bordeaux,Studio,15,50025,1,2022-06-24
+V9,Avenue de la Liberté 34,Nice,Villa,196,1144248,5,2020-07-18
+V10,Chemin des Vignes 67,Bordeaux,Maison,338,2919644,5,2022-03-11
+V12,Rue Jean Jaurès,Strasbourg,Maison,435,1832000,1,2023-05-21
+V13,Quai de l'Église,Cholet,Maison,194,849800,7,2023-05-14
+V14,Place de la Paix,Rouen,Maison,448,1911600,6,2022-09-01
+V15,Place de la Gare,Hyères,Maison,57,274400,7,2022-03-24
+V16,Place de l'Opéra,Colmar,Villa,290,1547500,5,2021-02-19
+V17,Avenue du Moulin,Saint-Maur-des-Fossés,Maison,22,107400,3,2022-06-14
+V18,Allée des Lilas,Le Mans,Maison,141,607200,3,2022-02-10
+V19,Quai du Moulin,Champigny-sur-Marne,Villa,105,581250,6,2022-02-06
+V20,Avenue du Lac,Boulogne-Billancourt,Appartement,65,272500,9,2020-01-17
+V21,Avenue des Vignes,Cholet,Appartement,86,326000,5,2020-11-24
+V22,Quai du Parc,Antony,Appartement,488,1718000,2,2021-07-26
+V23,Avenue des Fleurs,Roubaix,Villa,230,1237500,6,2021-12-15
+V24,Boulevard de la Liberté,Dijon,Maison,322,1392400,8,2023-11-16
+V25,Allée de la République,Calais,Maison,171,748200,6,2022-05-17
+V26,Allée de l'Opéra,Reims,Appartement,228,823000,5,2020-01-05
+V27,Chemin du Lac,Niort,Appartement,441,1558500,3,2020-03-03
+V28,Allée de la Mairie,Le Havre,Villa,144,786000,6,2022-04-15
+V29,Quai de la Liberté,Villeurbanne,Villa,381,2005250,1,2021-03-14
+V30,Quai des Vignes,Pessac,Villa,361,1925250,6,2021-12-11
+V31,Allée des Fleurs,Mérignac,Maison,356,1530200,7,2020-01-28
+V32,Rue des Champs-Élysées,Saint-Denis,Maison,322,1357400,1,2022-01-19
+V33,Quai du Lac,Paris,Appartement,304,3658000,2,2022-12-26
+V34,Boulevard de la Gare,Béziers,Maison,221,938200,2,2022-12-06
+V35,Allée des Fleurs,Sarcelles,Villa,121,640250,1,2020-12-27
+V36,Chemin de la Mairie,Versailles,Appartement,222,802000,5,2021-06-29
+V37,Place de la Liberté,Angers,Appartement,199,726500,6,2023-03-23
+V38,Quai des Vignes,Quimper,Maison,145,639000,6,2021-12-16
+V39,Allée du Parc,Sarcelles,Appartement,311,1133500,9,2022-10-17
+V40,Rue du Moulin,Issy-les-Moulineaux,Maison,52,238400,4,2022-10-22
+V41,Boulevard de Bellevue,Angers,Maison,264,1128800,4,2023-10-13
+V42,Chemin de l'Église,Metz,Appartement,177,639500,4,2021-11-14
+V43,Avenue de la Gare,La Seyne-sur-Mer,Villa,342,1820500,5,2022-10-21
+V44,Rue des Lilas,Aubervilliers,Appartement,91,328500,2,2023-01-02
+V45,Chemin Saint-Martin,Aulnay-sous-Bois,Maison,310,1322000,4,2023-08-01
+V46,Quai Victor Hugo,Ivry-sur-Seine,Maison,317,1366400,7,2023-07-01
+V47,Chemin du Moulin,Angers,Villa,487,2586750,6,2023-01-03
+V48,Chemin des Écoles,Saint-Nazaire,Appartement,296,1056000,4,2021-02-05
+V49,Rue des Champs-Élysées,Quimper,Appartement,496,1766000,6,2021-12-05
+V50,Boulevard des Champs-Élysées,Poitiers,Villa,280,1490000,4,2021-07-24
+V51,Boulevard Jean Jaurès,Rueil-Malmaison,Villa,205,1101250,5,2021-03-24
+V52,Quai de Bellevue,Asnières-sur-Seine,Maison,409,1747800,6,2021-07-16
+V53,Rue du Lac,Vénissieux,Villa,415,2188750,2,2021-03-01
+V54,Avenue de la Mairie,Calais,Villa,378,2004500,4,2023-05-19
+V55,Allée de la Mairie,La Seyne-sur-Mer,Maison,179,771800,4,2021-08-26
+V56,Avenue des Lilas,Aix-en-Provence,Villa,372,1968000,3,2023-12-27
+V57,Boulevard de la Mairie,Bordeaux,Villa,455,2393750,1,2020-04-17
+V58,Boulevard des Champs-Élysées,Troyes,Appartement,304,1084000,4,2023-11-15
+V59,Rue de la Paix,Nîmes,Villa,498,2659500,9,2023-05-25
+V60,Quai des Lilas,Cholet,Appartement,294,1044000,3,2021-12-02
+V61,Quai Saint-Martin,Champigny-sur-Marne,Appartement,388,1393000,7,2020-02-27
+V62,Avenue de la Gare,Calais,Maison,220,959000,7,2022-12-01
+V63,Chemin Saint-Martin,Villeneuve-d'Ascq,Villa,241,1295250,6,2023-03-16
+V64,Avenue Saint-Martin,Neuilly-sur-Seine,Appartement,483,1725500,7,2022-11-19
+V65,Rue du Moulin,Montauban,Appartement,344,698000,2,2022-12-05
+V66,Place des Lilas,Montreuil,Maison,71,303200,1,2023-07-09
+V67,Boulevard Saint-Martin,Colmar,Villa,452,2423000,10,2023-12-28
+V68,Place des Lilas,Rouen,Maison,291,1227200,1,2021-01-05
+V69,Chemin Victor Hugo,Bordeaux,Villa,410,2192500,8,2021-09-05
+V70,Quai de la République,Aix-en-Provence,Appartement,169,616500,5,2022-09-08
+V71,Quai du Moulin,Troyes,Maison,201,869200,5,2022-04-29
+V72,Allée Victor Hugo,Strasbourg,Maison,364,1578800,10,2020-12-20
+V73,Place du Moulin,Besançon,Maison,464,1973800,5,2023-11-24
+V74,Quai de la Mairie,Limoges,Villa,193,1023250,2,2023-03-21
+V75,Quai de la Paix,Dijon,Villa,326,1731500,4,2020-09-20
+V76,Boulevard du Moulin,Paris,Maison,401,5794400,4,2022-02-09
+V77,Rue du Lac,Villeneuve-d'Ascq,Appartement,472,1662000,2,2022-08-08
+V78,Chemin Jean Jaurès,Vitry-sur-Seine,Appartement,83,335500,9,2021-09-13
+V79,Boulevard de la Paix,Bordeaux,Maison,279,1211800,8,2020-05-07
+V80,Place Victor Hugo,Orléans,Villa,318,1719500,10,2021-01-21
+V81,Avenue Victor Hugo,Créteil,Villa,376,2009000,7,2023-05-09
+V82,Avenue des Champs-Élysées,Courbevoie,Appartement,445,1602500,9,2020-11-04
+V83,Chemin des Vignes,Cannes,Maison,211,911200,5,2021-02-01
+V84,Rue des Champs-Élysées,Issy-les-Moulineaux,Villa,219,1154750,1,2020-11-21
+V85,Place Saint-Martin,Dijon,Appartement,471,1683500,7,2023-05-01
+V86,Place de la Forêt,Boulogne-Billancourt,Villa,150,827500,8,2021-04-06
+V87,Boulevard du Lac,Valence,Maison,175,770000,7,2020-06-24
+V88,Place des Fleurs,Toulouse,Villa,115,710000,4,2020-12-30
+V89,Avenue des Champs-Élysées,Clichy,Villa,299,1614750,9,2020-02-06
+V90,Chemin du Parc,Champigny-sur-Marne,Appartement,187,674500,4,2021-05-10
+V91,Chemin Victor Hugo,Metz,Villa,69,397250,7,2020-06-07
+V92,Allée de l'Église,Boulogne-Billancourt,Villa,329,1752250,5,2022-03-11
+V93,Rue des Écoles,Paris,Maison,245,3538000,2,2021-10-10
+V94,Avenue de la Gare,Orléans,Appartement,224,829000,9,2023-08-21
+V95,Avenue des Lilas,Reims,Villa,146,806500,8,2022-04-04
+V96,Place de la République,Asnières-sur-Seine,Villa,380,2025000,6,2022-03-28
+V97,Rue Victor Hugo,Colmar,Appartement,29,111500,2,2020-07-24
+V98,Chemin de la Mairie,Limoges,Maison,376,1624200,9,2023-03-11
+V99,Allée Saint-Martin,Noisy-le-Grand,Maison,339,1448800,5,2021-03-27
+V100,Quai des Fleurs,Dijon,Maison,296,1293200,10,2021-11-24
+V101,Chemin de Bellevue,Clermont-Ferrand,Appartement,386,1391000,8,2020-10-20
+V102,Avenue de la Liberté,Versailles,Appartement,315,1117500,3,2022-02-05
+V103,Boulevard des Écoles,Nice,Appartement,157,908500,9,2021-04-28
+V104,Boulevard de la République,Besançon,Villa,342,1805500,2,2020-08-19
+V105,Avenue des Écoles,Strasbourg,Appartement,230,810000,1,2023-01-12
+V106,Rue de la République,Saint-Maur-des-Fossés,Appartement,314,1134000,7,2022-06-05
+V107,Chemin de la Paix,Aix-en-Provence,Maison,387,1655400,6,2021-07-20
+V108,Quai de la Mairie,Dunkerque,Villa,302,1605500,4,2021-01-06
+V109,Place des Fleurs,Marseille,Villa,45,286250,10,2021-04-29
+V110,Avenue de la Gare,Lyon,Maison,20,170000,10,2021-03-28
+V111,Allée Victor Hugo,Boulogne-Billancourt,Appartement,56,221000,5,2020-06-04
+V112,Rue du Moulin,Argenteuil,Appartement,494,1779000,10,2023-06-01
+V113,Boulevard de la Gare,Toulon,Maison,197,857400,6,2021-01-10
+V114,Boulevard du Parc,Chambéry,Villa,20,120000,3,2021-10-26
+V115,Allée du Lac,Pau,Appartement,115,442500,8,2023-03-26
+V116,Allée des Vignes,Dijon,Villa,88,492000,6,2021-03-22
+V117,Boulevard du Moulin,Mulhouse,Maison,131,560200,2,2021-11-24
+V118,Quai des Écoles,Le Havre,Villa,93,508250,4,2021-02-21
+V119,Quai des Lilas,Levallois-Perret,Villa,219,1154750,1,2021-08-11
+V120,Place de l'Église,Rennes,Appartement,464,1644000,4,2022-08-23
+V121,Boulevard du Lac,Reims,Appartement,182,642000,1,2023-09-08
+V122,Chemin des Écoles,Poitiers,Villa,345,1821250,2,2020-04-06
+V123,Rue de la Paix,Le Havre,Appartement,104,379000,3,2021-04-15
+V124,Avenue des Écoles,Toulon,Maison,268,1155600,6,2020-09-06
+V125,Allée Saint-Martin,Courbevoie,Appartement,323,1135500,1,2021-04-16
+V126,Allée Jean Jaurès,Perpignan,Villa,261,1405250,7,2021-10-30
+V127,Place des Vignes,Cannes,Maison,79,346800,3,2022-01-20
+V128,Allée de la Forêt,Antony,Villa,268,1427000,4,2021-06-23
+V129,Allée du Moulin,Paris,Villa,441,7943000,1,2020-05-20
+V130,Chemin de la Mairie,Montpellier,Villa,261,1375250,1,2021-09-13
+V131,Allée des Lilas,Roubaix,Villa,68,382000,5,2021-02-04
+V132,Rue de Bellevue,Orléans,Appartement,396,1421000,7,2021-03-08
+V133,Allée des Vignes,Angers,Appartement,490,1720000,1,2022-03-10
+V134,Rue de l'Église,Saint-Étienne,Maison,225,985000,8,2022-06-11
+V135,Quai des Lilas,Cholet,Maison,91,427200,9,2021-09-17
+V136,Place Saint-Martin,Angers,Maison,243,1040600,4,2020-07-09
+V137,Boulevard des Champs-Élysées,Saint-Étienne,Maison,127,543400,2,2023-06-14
+V138,Chemin Saint-Martin,Antony,Maison,169,759800,10,2022-11-10
+V139,Boulevard des Champs-Élysées,Grenoble,Maison,423,1781600,1,2021-11-08
+V140,Place de la Gare,Perpignan,Appartement,357,1299500,10,2021-02-05
+V141,Chemin Saint-Martin,Antibes,Maison,238,1049600,10,2022-04-24
+V142,Rue de la Forêt,Saint-Étienne,Appartement,421,1498500,5,2023-03-10
+V143,Boulevard des Champs-Élysées,Quimper,Maison,182,799400,7,2022-04-02
+V144,Boulevard de la Liberté,Colmar,Villa,30,177500,4,2020-05-12
+V145,Rue Jean Jaurès,Montreuil,Appartement,379,1351500,5,2022-12-12
+V146,Place Victor Hugo,Amiens,Villa,434,2303500,5,2022-02-27
+V147,Allée de la République,Mérignac,Villa,270,1447500,6,2023-04-29
+V148,Quai de la Forêt,Metz,Villa,157,874250,10,2022-04-22
+V149,Rue de la Liberté,Mulhouse,Maison,258,1098600,3,2021-10-11
+V150,Allée de la Paix,Metz,Maison,495,2104000,5,2020-01-25
+V151,Rue de la Gare,Brest,Maison,360,1517000,1,2023-01-15
+V152,Allée des Vignes,Sarcelles,Maison,55,251000,4,2023-06-20
+V153,Quai de la Mairie,Saint-Nazaire,Maison,252,1073400,3,2021-04-02
+V154,Avenue des Lilas,Asnières-sur-Seine,Maison,79,381800,10,2023-05-22
+V155,Place des Fleurs,Reims,Villa,305,1606250,1,2021-03-23
+V156,Allée de la Mairie,Versailles,Appartement,327,1149500,1,2021-05-27
+V157,Avenue de la Liberté,Bordeaux,Maison,132,584400,6,2020-09-04
+V158,Avenue Jean Jaurès,Clermont-Ferrand,Maison,142,636400,8,2021-05-04
+V159,Place Jean Jaurès,Cholet,Maison,147,627400,2,2021-02-04
+V160,Allée du Moulin,Antony,Villa,125,681250,5,2022-06-10
+V161,Place Saint-Martin,Issy-les-Moulineaux,Appartement,225,812500,5,2022-02-02
+V162,Allée du Lac,Marseille,Maison,22,107400,3,2022-10-12
+V163,Place Victor Hugo,Saint-Étienne,Maison,493,2120600,10,2023-02-17
+V164,Chemin de Bellevue,Montreuil,Villa,480,2525000,1,2021-09-09
+V165,Allée du Lac,Marseille,Maison,308,1338600,9,2021-07-17
+V166,Boulevard du Moulin,Antibes,Appartement,168,608000,4,2023-08-16
+V167,Rue de la Liberté,Roubaix,Maison,401,1699200,3,2022-08-30
+V168,Boulevard des Écoles,Saint-Nazaire,Villa,217,1169250,6,2022-11-18
+V169,Boulevard Victor Hugo,Saint-Maur-des-Fossés,Maison,195,834000,3,2021-01-11
+V170,Quai de la Paix,Nîmes,Villa,276,1469000,4,2022-03-10
+V171,Rue de la République,Montauban,Villa,162,526000,8,2022-08-04
+V172,Avenue Saint-Martin,Lorient,Villa,99,564750,9,2021-07-15
+V173,Place des Fleurs,Saint-Maur-des-Fossés,Appartement,132,482000,4,2020-03-14
+V174,Rue des Fleurs,Reims,Villa,424,2241000,3,2022-10-27
+V175,Boulevard de la Forêt,La Seyne-sur-Mer,Villa,422,2265500,10,2023-11-02
+V176,Allée Victor Hugo,Nancy,Maison,339,1443800,4,2021-02-14
+V177,Chemin de la Gare,Reims,Villa,153,808250,1,2021-04-17
+V178,Boulevard de la République,Tours,Maison,113,519600,9,2023-08-18
+V179,Boulevard Jean Jaurès,Saint-Étienne,Appartement,60,235000,5,2020-10-25
+V180,Chemin des Lilas,La Seyne-sur-Mer,Maison,75,365000,10,2021-10-17
+V181,Place de l'Opéra,Villeneuve-d'Ascq,Appartement,194,729000,10,2022-05-31
+V182,Chemin de la Forêt,Vénissieux,Maison,295,1259000,4,2021-10-05
+V183,Avenue Jean Jaurès,Angers,Villa,307,1626750,3,2022-07-18
+V184,Allée de la Paix,Rouen,Appartement,259,931500,5,2023-09-26
+V185,Boulevard du Lac,Tourcoing,Maison,138,599600,4,2020-04-25
+V186,Avenue de l'Église,Champigny-sur-Marne,Villa,190,1012500,3,2022-09-13
+V187,Boulevard Victor Hugo,Montreuil,Villa,419,2239750,8,2021-02-06
+V188,Rue du Moulin,Saint-Maur-des-Fossés,Appartement,87,339500,7,2023-11-23
+V189,Chemin des Champs-Élysées,Toulon,Villa,379,2034750,9,2023-12-13
+V190,Avenue du Lac,Angers,Villa,130,712500,6,2020-10-18
+V191,Avenue de la Paix,Le Havre,Maison,327,1383400,2,2022-10-25
+V192,Boulevard des Fleurs,Lille,Appartement,93,375500,10,2022-09-19
+V193,Place du Parc,Saint-Denis,Appartement,253,930500,9,2022-04-24
+V194,Rue du Lac,Argenteuil,Maison,387,1675400,10,2023-02-10
+V195,Chemin de la Forêt,Roubaix,Appartement,459,1626500,4,2021-03-12
+V196,Chemin du Moulin,Le Mans,Appartement,217,784500,5,2021-08-15
+V197,Allée des Lilas,Paris,Appartement,188,2301000,9,2020-08-10
+V198,Chemin de la Paix,Lille,Appartement,86,321000,4,2022-02-04
+V199,Rue des Champs-Élysées,Clermont-Ferrand,Appartement,303,1110500,10,2021-06-19
+V200,Quai des Écoles,Niort,Appartement,162,612000,9,2021-03-13
+V201,Avenue des Fleurs,Strasbourg,Appartement,87,319500,3,2022-01-19
+V202,Quai du Parc,Sarcelles,Appartement,422,1482000,1,2021-06-04
+V203,Chemin de la République,Caen,Maison,223,966600,6,2022-04-01
+V204,Boulevard de l'Église,Cannes,Appartement,212,752000,2,2021-04-25
+V205,Avenue du Moulin,Lille,Maison,464,1958800,2,2023-03-15
+V206,Chemin de la Mairie,Saint-Quentin,Appartement,481,1693500,2,2022-12-27
+V207,Quai de l'Église,Clermont-Ferrand,Appartement,482,1712000,5,2020-06-14
+V208,Allée du Parc,Rennes,Villa,198,1084500,9,2023-07-17
+V209,Quai de la Forêt,Saint-Étienne,Appartement,52,227000,9,2023-06-02
+V210,Place du Lac,Courbevoie,Appartement,352,1252000,4,2022-03-05
+V211,Boulevard de l'Église,Rouen,Maison,243,1060600,8,2022-09-10
+V212,Avenue des Champs-Élysées,Toulon,Villa,195,1038750,3,2023-10-13
+V213,Allée du Parc,Besançon,Villa,40,235000,5,2021-05-15
+V214,Quai de la Gare,Nice,Maison,88,585800,1,2022-05-15
+V215,Chemin des Lilas,Sarcelles,Appartement,147,544500,6,2021-06-01
+V216,Avenue des Vignes,Argenteuil,Maison,332,1434400,8,2020-09-30
+V217,Quai Saint-Martin,Saint-Denis,Villa,21,135250,5,2020-11-28
+V218,Boulevard du Parc,Poitiers,Villa,166,896500,5,2021-01-27
+V219,Place de la Paix,Toulon,Maison,198,871600,8,2021-11-10
+V220,Quai du Moulin,Montauban,Maison,129,324600,3,2021-12-19
+V221,Rue du Lac,Chambéry,Appartement,80,325000,9,2021-10-28
+V222,Place de la Mairie,Lyon,Appartement,296,1525000,9,2022-06-14
+V223,Allée des Vignes,Mulhouse,Maison,228,967600,2,2023-09-07
+V224,Allée Victor Hugo,Paris,Villa,420,7600000,8,2023-02-10
+V225,Chemin des Fleurs,Mulhouse,Appartement,69,291500,10,2021-04-15
+V226,Rue de l'Opéra,Colmar,Maison,365,1573000,8,2020-01-26
+V227,Chemin des Lilas,Aix-en-Provence,Maison,316,1332200,1,2021-06-16
+V228,Quai de la Gare,Valence,Maison,133,593600,7,2020-07-11
+V229,Boulevard de la République,Grenoble,Appartement,202,717000,2,2022-01-29
+V230,Quai du Lac,Cannes,Maison,267,1171400,10,2021-08-03
+V231,Rue de la Liberté,Antony,Villa,85,496250,10,2022-01-09
+V232,Quai de l'Opéra,Aulnay-sous-Bois,Appartement,104,369000,1,2021-09-07
+V233,Allée de l'Église,Quimper,Villa,52,283000,2,2022-09-28
+V234,Quai des Lilas,Saint-Maur-des-Fossés,Villa,361,1910250,3,2022-04-17
+V235,Chemin des Écoles,Courbevoie,Appartement,276,1016000,10,2023-06-16
+V236,Avenue de la République,Saint-Maur-des-Fossés,Maison,427,1803400,2,2020-06-18
+V237,Avenue de l'Opéra,Issy-les-Moulineaux,Appartement,371,1323500,5,2020-07-27
+V238,Place des Lilas,Bordeaux,Villa,64,386000,10,2021-01-05
+V239,Place de la Gare,Lille,Maison,396,1678200,3,2023-03-13
+V240,Boulevard Victor Hugo,Paris,Appartement,479,5798000,10,2023-04-02
+V241,Place du Parc,Nîmes,Villa,341,1805250,3,2022-03-28
+V242,Chemin du Moulin,Asnières-sur-Seine,Appartement,118,458000,9,2020-10-05
+V243,Rue de la République,Aubervilliers,Appartement,186,691000,8,2020-05-28
+V244,Allée de la Gare,Rennes,Maison,320,1379000,7,2023-09-21
+V245,Chemin de l'Opéra,Béziers,Villa,57,334250,7,2021-11-27
+V246,Chemin de la Gare,Aulnay-sous-Bois,Maison,492,2076400,2,2020-04-27
+V247,Avenue du Moulin,Rouen,Maison,194,864800,10,2023-04-05
+V248,Chemin de l'Opéra,Levallois-Perret,Maison,345,1489000,8,2020-11-26
+V249,Avenue Jean Jaurès,Montpellier,Maison,400,1715000,7,2021-06-15
+V250,Place du Parc,Paris,Maison,193,2799200,4,2021-04-18
+V251,Boulevard du Moulin,Lyon,Villa,88,670000,2,2020-08-07
+V252,Quai Jean Jaurès,Rueil-Malmaison,Villa,48,287000,7,2023-07-19
+V253,Place Victor Hugo,Courbevoie,Villa,305,1616250,3,2023-10-28
+V254,Chemin Saint-Martin,Quimper,Maison,282,1219400,7,2020-11-30
+V255,Boulevard des Lilas,Roubaix,Appartement,197,724500,7,2023-05-05
+V256,Avenue de la Forêt,Cholet,Appartement,187,684500,6,2022-03-01
+V257,Boulevard de la République,Colmar,Appartement,374,1329000,4,2021-06-21
+V258,Avenue de la Forêt,Hyères,Maison,394,1669800,3,2020-07-25
+V259,Allée Saint-Martin,Roubaix,Maison,451,1939200,9,2022-03-01
+V260,Place Jean Jaurès,Boulogne-Billancourt,Appartement,396,1391000,1,2022-01-13
+V261,Quai des Vignes,Besançon,Appartement,346,1241000,6,2022-06-11
+V262,Place du Moulin,Toulon,Maison,332,1399400,1,2023-07-16
+V263,Chemin des Lilas,Montreuil,Appartement,155,552500,2,2023-09-11
+V264,Rue de la Paix,Le Havre,Villa,60,365000,10,2020-10-05
+V265,Avenue du Parc,Montreuil,Appartement,314,1149000,10,2023-11-17
+V266,Boulevard de la Paix,Nîmes,Villa,450,2377500,3,2022-07-26
+V267,Chemin des Lilas,Ivry-sur-Seine,Appartement,243,870500,4,2020-05-08
+V268,Place de la Liberté,Drancy,Maison,250,1095000,9,2023-07-17
+V269,Avenue du Lac,Roubaix,Villa,342,1840500,9,2020-07-28
+V270,Place du Parc,Roubaix,Maison,263,1154600,10,2021-03-09
+V271,Place des Vignes,Caen,Maison,256,1115200,8,2023-10-02
+V272,Avenue de l'Opéra,Grenoble,Maison,37,160400,1,2020-10-15
+V273,Place de la Liberté,Limoges,Appartement,296,1076000,8,2022-07-02
+V274,Boulevard Saint-Martin,Pessac,Appartement,432,1532000,4,2023-03-05
+V275,Allée Jean Jaurès,Avignon,Villa,30,172500,3,2021-10-20
+V276,Avenue des Fleurs,Caen,Villa,446,2371500,6,2022-04-28
+V277,Quai de la Gare,Caen,Appartement,179,631500,1,2022-06-05
+V278,Chemin de la Liberté,Noisy-le-Grand,Appartement,277,999500,6,2021-10-05
+V279,Avenue de la Paix,Montpellier,Appartement,155,582500,8,2022-09-23
+V280,Rue de la Paix,Vénissieux,Appartement,221,783500,2,2020-10-13
+V281,Place de l'Opéra,Pau,Maison,334,1452800,10,2021-08-16
+V282,Allée de la Paix,Bourges,Villa,401,2135250,6,2020-11-07
+V283,Allée de la Forêt,Béziers,Appartement,264,969000,9,2023-03-08
+V284,Quai des Vignes,Nîmes,Maison,155,681000,6,2020-01-19
+V285,Place du Parc,Aulnay-sous-Bois,Villa,41,225250,2,2021-02-05
+V286,Avenue des Champs-Élysées,Saint-Quentin,Maison,383,1618600,2,2020-03-27
+V287,Avenue des Champs-Élysées,Bordeaux,Villa,357,1914250,8,2021-08-20
+V288,Avenue Saint-Martin,Troyes,Maison,364,1548800,4,2022-07-30
+V289,Rue de l'Opéra,Roubaix,Villa,203,1100750,7,2023-08-20
+V290,Quai de la Gare,Brest,Villa,240,1305000,9,2022-01-08
+V291,Place de la Liberté,Valence,Appartement,158,588000,7,2020-07-05
+V292,Allée du Lac,Lyon,Maison,50,335000,7,2022-10-30
+V293,Allée de la Paix,Troyes,Villa,241,1300250,7,2023-01-26
+V294,Rue Victor Hugo,Vitry-sur-Seine,Villa,456,2399000,1,2023-05-27
+V295,Quai Saint-Martin,Angers,Maison,457,1924400,1,2021-08-03
+V296,Chemin de la Liberté,Colmar,Appartement,436,1561000,7,2023-07-29
+V297,Avenue de l'Opéra,Cannes,Appartement,306,1091000,4,2022-12-28
+V298,Chemin de la Mairie,Colmar,Appartement,465,1637500,2,2023-04-22
+V299,Avenue de la République,Toulouse,Appartement,45,210000,6,2021-05-30
+V300,Avenue des Écoles,Clermont-Ferrand,Appartement,134,519000,10,2022-05-20
+V301,Boulevard des Écoles,Champigny-sur-Marne,Villa,409,2162250,3,2020-12-06
+V302,Allée de la République,Rueil-Malmaison,Maison,74,360800,10,2020-07-15
+V303,Place Victor Hugo,Le Havre,Maison,231,1005200,7,2021-06-11
+V304,Place du Lac,Villeurbanne,Appartement,408,1473000,9,2021-01-25
+V305,Place de l'Église,Amiens,Villa,37,234250,8,2022-03-12
+V306,Allée du Lac,Asnières-sur-Seine,Appartement,467,1649500,3,2021-01-22
+V307,Avenue de l'Opéra,Aulnay-sous-Bois,Maison,73,336600,6,2020-06-03
+V308,Rue de la Mairie,Mulhouse,Villa,345,1841250,6,2020-06-01
+V309,Allée du Moulin,Rueil-Malmaison,Appartement,355,1272500,6,2021-01-25
+V310,Rue de la Forêt,Sarcelles,Villa,434,2308500,6,2022-07-01
+V311,Place Saint-Martin,Grenoble,Villa,257,1394250,9,2023-01-12
+V312,Boulevard des Fleurs,Neuilly-sur-Seine,Maison,125,555000,6,2021-01-21
+V313,Allée de l'Église,Amiens,Appartement,417,1464500,1,2020-01-04
+V314,Quai de la Forêt,Calais,Villa,62,330500,1,2023-06-24
+V315,Allée des Lilas,Antibes,Villa,251,1327750,2,2022-10-22
+V316,Chemin de la Mairie,Brest,Maison,432,1859400,9,2023-03-14
+V317,Allée de la Mairie,Colombes,Appartement,70,255000,2,2022-06-17
+V318,Place de la République,Cergy,Villa,167,901750,5,2022-10-11
+V319,Rue du Moulin,Antony,Villa,173,913250,1,2023-02-14
+V320,Chemin des Vignes,Argenteuil,Appartement,170,625000,6,2021-10-15
+V321,Rue Victor Hugo,Calais,Villa,60,345000,6,2023-12-30
+V322,Place de Bellevue,Bordeaux,Appartement,485,1712500,3,2021-01-21
+V323,Allée de la République,Asnières-sur-Seine,Maison,42,191400,3,2022-07-12
+V324,Place des Lilas,Saint-Étienne,Maison,479,2051800,8,2022-01-08
+V325,Quai du Parc,Nîmes,Maison,359,1517800,2,2020-07-23
+V326,Boulevard du Lac,Créteil,Appartement,430,1555000,10,2022-11-20
+V327,Chemin Jean Jaurès,Roubaix,Maison,152,663400,5,2023-07-11
+V328,Quai de la Mairie,Antibes,Villa,110,597500,4,2023-05-03
+V329,Quai des Écoles,Clermont-Ferrand,Appartement,73,270500,3,2023-12-19
+V330,Avenue de l'Opéra,Poitiers,Appartement,180,650000,4,2021-05-19
+V331,Rue Saint-Martin,Grenoble,Maison,481,2030200,2,2020-11-24
+V332,Allée Saint-Martin,Marseille,Appartement,95,377500,9,2022-10-20
+V333,Rue de la Mairie,Valence,Villa,418,2239500,9,2020-01-16
+V334,Allée du Parc,Lyon,Maison,249,1504000,2,2022-11-16
+V335,Allée de la Paix,Caen,Maison,354,1511800,5,2021-07-07
+V336,Quai Victor Hugo,Besançon,Appartement,499,1771500,5,2021-04-06
+V337,Quai de la Paix,Paris,Maison,416,6010400,4,2023-07-20
+V338,Allée de la Gare,Vitry-sur-Seine,Appartement,361,1273500,2,2020-08-05
+V339,Rue de Bellevue,Avignon,Appartement,255,917500,5,2020-06-16
+V340,Allée des Champs-Élysées,Dunkerque,Villa,387,2081750,10,2022-11-24
+V341,Allée de l'Église,Issy-les-Moulineaux,Maison,76,359200,8,2023-07-06
+V342,Rue des Vignes,Marseille,Appartement,245,862500,1,2022-11-24
+V343,Allée de la Gare,Caen,Maison,283,1238600,10,2021-06-26
+V344,Place du Moulin,Le Havre,Maison,497,2102400,3,2022-07-31
+V345,Boulevard de l'Opéra,Troyes,Appartement,68,253000,3,2022-12-10
+V346,Avenue du Parc,Saint-Quentin,Maison,360,1542000,6,2023-02-19
+V347,Avenue du Moulin,Ivry-sur-Seine,Appartement,348,1258000,8,2020-03-30
+V348,Avenue Jean Jaurès,Colombes,Appartement,309,1111500,6,2023-06-03
+V349,Allée de l'Église,Hyères,Appartement,390,1380000,3,2021-02-13
+V350,Rue des Fleurs,Nice,Maison,142,947200,2,2021-05-09
+V351,Chemin du Parc,Courbevoie,Villa,222,1195500,6,2021-08-05
+V352,Avenue du Parc,Avignon,Maison,470,1999000,5,2020-02-29
+V353,Avenue de la République,Toulouse,Villa,436,2651000,7,2021-12-21
+V354,Allée de l'Opéra,Pessac,Maison,387,1640400,3,2020-09-21
+V355,Chemin du Parc,Cergy,Villa,234,1248500,4,2023-06-26
+V356,Rue des Fleurs,Metz,Appartement,117,439500,6,2020-10-30
+V357,Rue Saint-Martin,Avignon,Villa,405,2156250,6,2020-02-27
+V358,Allée Victor Hugo,Créteil,Maison,125,545000,4,2021-07-29
+V359,Rue du Lac,Bourges,Maison,459,1962800,7,2023-05-08
+V360,Boulevard de la Gare,Saint-Maur-des-Fossés,Villa,300,1605000,6,2021-10-02
+V361,Place de la Forêt,Antibes,Maison,72,352400,10,2020-01-11
+V362,Quai de la Paix,Aix-en-Provence,Appartement,371,1333500,7,2021-01-07
+V363,Avenue Saint-Martin,La Rochelle,Appartement,427,1509500,3,2022-11-07
+V364,Rue du Moulin,Nantes,Villa,267,1416750,3,2022-06-13
+V365,Rue des Champs-Élysées,Paris,Maison,45,683000,7,2021-10-05
+V366,Quai des Vignes,Cannes,Appartement,181,663500,6,2020-08-16
+V367,Place de la Liberté,Champigny-sur-Marne,Villa,474,2503500,3,2021-02-14
+V368,Quai des Fleurs,Tourcoing,Maison,251,1099200,9,2021-08-14
+V369,Place du Lac,Colmar,Villa,252,1353000,6,2021-12-10
+V370,Place Saint-Martin,Nanterre,Appartement,323,1160500,6,2022-09-16
+V371,Chemin de la Liberté,Aix-en-Provence,Maison,388,1674600,9,2020-01-07
+V372,Avenue des Lilas,Nice,Maison,350,2325000,3,2021-09-24
+V373,Rue de Bellevue,Marseille,Villa,228,1217000,4,2023-04-03
+V374,Quai de la Paix,Saint-Quentin,Villa,189,1042250,10,2021-10-31
+V375,Boulevard de la Mairie,Brest,Villa,145,781250,4,2021-05-30
+V376,Place du Lac,Nîmes,Appartement,347,1234500,4,2021-10-25
+V377,Quai Victor Hugo,Neuilly-sur-Seine,Maison,349,1515800,10,2023-06-12
+V378,Quai du Moulin,Bourges,Maison,34,167800,5,2023-10-09
+V379,Quai du Moulin,Chambéry,Appartement,250,895000,4,2021-02-27
+V380,Chemin des Lilas,Béziers,Maison,129,561800,4,2020-12-28
+V381,Place de Bellevue,Courbevoie,Appartement,163,585500,3,2023-04-11
+V382,Avenue Saint-Martin,La Seyne-sur-Mer,Maison,99,440800,5,2022-08-24
+V383,Quai du Lac,Antibes,Villa,436,2324000,7,2022-02-04
+V384,Avenue Victor Hugo,Antony,Appartement,440,1545000,1,2021-05-11
+V385,Chemin des Fleurs,Troyes,Villa,190,1042500,9,2022-04-13
+V386,Place des Fleurs,Mérignac,Villa,372,1973000,4,2023-07-09
+V387,Quai du Lac,Cholet,Appartement,220,810000,8,2023-02-10
+V388,Allée du Lac,Aubervilliers,Maison,25,145000,8,2022-03-08
+V389,Boulevard de la Forêt,Besançon,Appartement,25,92500,1,2022-11-08
+V390,Allée Saint-Martin,Colombes,Villa,262,1390500,3,2022-10-03
+V391,Rue du Parc,Drancy,Villa,436,2294000,1,2020-10-19
+V392,Avenue de la Gare,Amiens,Appartement,164,609000,7,2023-04-30
+V393,Chemin de l'Église,Saint-Maur-des-Fossés,Villa,27,171750,6,2022-09-13
+V394,Place de la Liberté,Cholet,Villa,293,1558250,4,2020-05-23
+V395,Rue de l'Opéra,Toulon,Villa,113,628250,7,2023-10-10
+V396,Allée des Écoles,Neuilly-sur-Seine,Villa,208,1112000,4,2020-12-08
+V397,Place de la République,Grenoble,Villa,134,743500,8,2021-12-10
+V398,Boulevard Saint-Martin,Le Mans,Maison,127,538400,1,2023-12-15
+V399,Allée des Écoles,Tourcoing,Maison,207,919400,10,2020-07-03
+V400,Boulevard Jean Jaurès,Valence,Villa,446,2391500,10,2021-10-12
+V401,Rue de la Mairie,Brest,Villa,455,2393750,1,2023-04-03
+V402,Quai des Écoles,Amiens,Maison,226,974200,5,2021-01-15
+V403,Quai du Lac,Paris,Maison,40,591000,3,2021-07-22
+V404,Chemin des Vignes,Nancy,Villa,329,1772250,9,2023-05-05
+V405,Boulevard du Lac,Orléans,Villa,178,984500,10,2023-02-04
+V406,Place de la Forêt,Pau,Villa,259,1399750,8,2022-04-28
+V407,Quai du Moulin,Mérignac,Appartement,372,1352000,10,2022-09-03
+V408,Place des Champs-Élysées,Nancy,Villa,394,2078500,2,2022-10-25
+V409,Rue de la Mairie,Montreuil,Appartement,472,1687000,7,2023-06-26
+V410,Chemin Jean Jaurès,Issy-les-Moulineaux,Villa,451,2382750,3,2020-02-08
+V411,Allée des Vignes,Boulogne-Billancourt,Maison,365,1573000,8,2022-04-30
+V412,Avenue Jean Jaurès,Reims,Appartement,113,445500,10,2021-02-08
+V413,Quai du Parc,Argenteuil,Villa,450,2382500,4,2020-05-13
+V414,Avenue de la République,Mérignac,Villa,82,465500,7,2020-04-20
+V415,Quai du Lac,Saint-Quentin,Villa,188,1027000,8,2021-08-05
+V416,Allée du Lac,Marseille,Maison,192,841400,7,2020-02-22
+V417,Boulevard de la Paix,Villeneuve-d'Ascq,Maison,80,381000,9,2021-09-15
+V418,Rue de la Forêt,Grenoble,Maison,344,1459800,3,2021-02-10
+V419,Quai de l'Opéra,Perpignan,Appartement,284,1039000,9,2022-03-09
+V420,Rue des Fleurs,Saint-Denis,Villa,250,1337500,5,2023-03-22
+V421,Allée Saint-Martin,Dunkerque,Maison,488,2084600,7,2020-12-10
+V422,Allée de la République,Grenoble,Appartement,414,1464000,3,2023-10-26
+V423,Quai de l'Opéra,La Rochelle,Villa,167,916750,8,2021-11-03
+V424,Chemin de la République,Aubervilliers,Appartement,166,621000,8,2022-07-19
+V425,Allée de la République,Cholet,Appartement,339,1201500,3,2021-12-26
+V426,Quai de la Gare,Strasbourg,Maison,411,1771200,9,2023-04-20
+V427,Quai de l'Opéra,Mulhouse,Appartement,199,746500,10,2021-08-15
+V428,Boulevard Victor Hugo,Sarcelles,Villa,83,455750,4,2022-05-07
+V429,Allée Victor Hugo,Rouen,Appartement,443,1600500,10,2023-03-03
+V430,Chemin de la Paix,Toulouse,Maison,181,873800,1,2021-03-18
+V431,Avenue du Lac,Pau,Appartement,319,1156500,8,2020-12-04
+V432,Boulevard des Fleurs,Bourges,Appartement,321,1168500,9,2021-03-30
+V433,Place Saint-Martin,Brest,Maison,434,1847800,5,2021-12-10
+V434,Chemin de la Gare,Besançon,Villa,38,209500,2,2022-03-17
+V435,Rue du Parc,Nice,Maison,419,2815400,10,2022-02-16
+V436,Quai de la Forêt,Clermont-Ferrand,Appartement,68,258000,4,2022-04-18
+V437,Boulevard de la Paix,Quimper,Appartement,156,561000,3,2020-04-19
+V438,Boulevard de la Forêt,Rennes,Villa,196,1044000,3,2022-01-12
+V439,Quai Saint-Martin,Cergy,Villa,132,728000,7,2023-04-09
+V440,Place des Fleurs,Paris,Villa,117,2141000,7,2020-05-12
+V441,Chemin Victor Hugo,Amiens,Appartement,97,384500,9,2023-05-24
+V442,Chemin de la Liberté,Caen,Appartement,219,781500,3,2021-11-28
+V443,Allée de la Gare,Dijon,Villa,172,933000,6,2022-09-24
+V444,Allée du Moulin,Perpignan,Maison,209,922800,9,2022-05-16
+V445,Rue du Lac,Vénissieux,Maison,424,1800800,4,2021-04-23
+V446,Place de la Forêt,Clichy,Maison,226,999200,10,2023-12-06
+V447,Rue de la Gare,Drancy,Appartement,267,944500,2,2022-10-15
+V448,Allée du Lac,Rueil-Malmaison,Maison,29,136800,3,2021-04-19
+V449,Quai du Lac,Quimper,Appartement,335,1192500,4,2023-01-06
+V450,Place de l'Église,Orléans,Villa,238,1269500,4,2020-06-01
+V451,Place de la Forêt,Roubaix,Villa,235,1243750,2,2021-02-22
+V452,Chemin de la Forêt,Toulouse,Villa,239,1484000,10,2021-03-24
+V453,Chemin du Parc,Clermont-Ferrand,Appartement,425,1532500,9,2020-05-01
+V454,Rue du Moulin,Colombes,Appartement,32,122000,2,2020-10-13
+V455,Avenue de la République,Cholet,Appartement,157,559500,2,2020-09-11
+V456,Boulevard du Lac,Roubaix,Maison,306,1305200,4,2023-05-21
+V457,Boulevard des Écoles,Rennes,Appartement,87,329500,5,2021-12-16
+V458,Allée de Bellevue,Besançon,Villa,172,913000,2,2021-09-22
+V459,Rue de Bellevue,Orléans,Appartement,231,838500,6,2023-02-12
+V460,Rue Saint-Martin,Argenteuil,Appartement,148,568000,10,2021-11-28
+V461,Place Saint-Martin,Dunkerque,Maison,210,887000,1,2022-01-22
+V462,Allée de la Liberté,Antibes,Appartement,43,170500,4,2020-02-09
+V463,Avenue de la Gare,Metz,Appartement,21,118500,9,2022-07-17
+V464,Chemin de la Paix,Vénissieux,Maison,213,899600,1,2020-05-12
+V465,Avenue des Lilas,Cannes,Appartement,59,241500,7,2020-10-05
+V466,Chemin des Vignes,Hyères,Appartement,280,990000,2,2023-03-23
+V467,Rue des Écoles,Noisy-le-Grand,Maison,356,1535200,8,2022-12-16
+V468,Rue du Parc,Tourcoing,Appartement,353,1260500,5,2021-12-16
+V469,Chemin du Lac,Aix-en-Provence,Appartement,206,766000,9,2023-05-16
+V470,Rue des Vignes,Colmar,Maison,170,729000,3,2021-08-25
+V471,Allée du Moulin,Orléans,Villa,426,2256500,4,2023-12-02
+V472,Place Jean Jaurès,Nantes,Appartement,482,1722000,7,2020-06-23
+V473,Avenue des Vignes,Nîmes,Maison,177,773400,6,2023-06-17
+V474,Allée de la Forêt,Strasbourg,Appartement,149,526500,1,2022-10-03
+V475,Boulevard de la Mairie,Poitiers,Villa,102,555500,4,2021-06-03
+V476,Quai du Lac,Ajaccio,Maison,487,2060400,3,2022-11-11
+V477,Place de la République,Villeneuve-d'Ascq,Villa,454,2413500,6,2020-12-05
+V478,Avenue Saint-Martin,Metz,Appartement,93,355500,6,2021-03-06
+V479,Boulevard de la Forêt,Strasbourg,Maison,36,196200,9,2022-09-30
+V480,Place Jean Jaurès,Toulouse,Appartement,433,1757000,5,2020-08-01
+V481,Boulevard de la Gare,Colombes,Appartement,460,1615000,1,2022-02-25
+V482,Allée des Fleurs,Cannes,Appartement,34,139000,4,2020-08-03
+V483,Allée de la Mairie,Villeurbanne,Villa,490,2617500,9,2021-06-04
+V484,Boulevard de l'Opéra,Versailles,Maison,241,1057200,9,2020-11-12
+V485,Chemin Jean Jaurès,Marseille,Maison,363,1569600,9,2023-08-05
+V486,Quai du Moulin,Villeurbanne,Maison,478,2022600,3,2020-11-15
+V487,Chemin Saint-Martin,Troyes,Appartement,392,1407000,7,2021-06-12
+V488,Chemin des Écoles,Le Havre,Appartement,69,276500,7,2021-11-17
+V489,Place Victor Hugo,Saint-Quentin,Appartement,333,1180500,3,2023-10-29
+V490,Quai Victor Hugo,Mulhouse,Villa,49,297250,8,2020-01-18
+V491,Place de la Gare,Saint-Nazaire,Maison,279,1176800,1,2020-02-20
+V492,Allée de la Paix,Roubaix,Villa,236,1244000,1,2023-06-03
+V493,Rue de la République,Roubaix,Villa,232,1223000,1,2020-10-09
+V494,Avenue de la République,Grenoble,Villa,309,1662250,8,2023-06-06
+V495,Place Saint-Martin,Saint-Maur-des-Fossés,Maison,230,1001000,7,2021-01-31
+V496,Avenue de la Liberté,Lyon,Maison,386,2326000,2,2022-05-15
+V497,Rue de la République,Vitry-sur-Seine,Appartement,458,1633000,6,2020-05-02
+V498,Place du Moulin,Saint-Maur-des-Fossés,Appartement,207,754500,6,2023-09-01
+V499,Allée de l'Église,Ajaccio,Appartement,249,876500,1,2022-07-10
+V500,Boulevard Victor Hugo,Villeneuve-d'Ascq,Villa,199,1074750,6,2023-11-23
+V501,Allée de l'Église,Versailles,Villa,163,890750,7,2021-10-22
+V502,Rue du Lac,Nîmes,Villa,495,2638750,8,2023-07-04
+V503,Avenue des Lilas,Béziers,Appartement,400,1445000,9,2020-12-13
+V504,Quai des Lilas,Niort,Appartement,328,1173000,5,2022-08-22
+V505,Quai de la Gare,Aix-en-Provence,Appartement,412,1477000,7,2023-03-21
+V506,Rue des Écoles,Angers,Villa,241,1305250,8,2021-08-21
+V507,Place du Parc,Limoges,Villa,113,608250,3,2021-02-25
+V508,Quai du Parc,Quimper,Maison,230,1006000,8,2021-06-06
+V509,Chemin Jean Jaurès,Limoges,Maison,32,169400,7,2022-06-11
+V510,Chemin du Moulin,Hyères,Appartement,310,1130000,9,2023-06-04
+V511,Boulevard de la Gare,Quimper,Maison,245,1079000,10,2023-01-23
