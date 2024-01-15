@@ -32,90 +32,90 @@ None
 #### Response Body
 ```json
 [
-    {
-        "city": "Bourges",
-        "data": {
-            "averagePrices": [
-                {
-                    "typeB": "Appartement",
-                    "averagePrice": 963050.0
-                },
-                {
-                    "typeB": "Maison",
-                    "averagePrice": 1010320.0
-                },
-                {
-                    "typeB": "Villa",
-                    "averagePrice": 1248775.0
-                }
-            ],
-            "salesCounts": 30,
-            "roomPriceAnalysis": [
-                {
-                    "surface": 294.0,
-                    "numberOfRooms": 1,
-                    "averagePrice": 1548500.0
-                },
-                {
-                    "surface": 231.0,
-                    "numberOfRooms": 8,
-                    "averagePrice": 1252750.0
-                },
-                {
-                    "surface": 235.0,
-                    "numberOfRooms": 2,
-                    "averagePrice": 832500.0
-                },
-                {
-                    "surface": 231.0,
-                    "numberOfRooms": 5,
-                    "averagePrice": 1237750.0
-                }
-            ]
+  {
+    "city": "Bourges",
+    "data": {
+      "averagePrices": [
+        {
+          "typeB": "Appartement",
+          "averagePrice": 963050.0
+        },
+        {
+          "typeB": "Maison",
+          "averagePrice": 1010320.0
+        },
+        {
+          "typeB": "Villa",
+          "averagePrice": 1248775.0
         }
-    },
-    {
-        "city": "Nanterre",
-        "data": {
-            "averagePrices": [
-                {
-                    "typeB": "Appartement",
-                    "averagePrice": 1070950.0
-                },
-                {
-                    "typeB": "Maison",
-                    "averagePrice": 943220.0
-                },
-                {
-                    "typeB": "Villa",
-                    "averagePrice": 1455125.0
-                }
-            ],
-            "salesCounts": 30,
-            "roomPriceAnalysis": [
-                {
-                    "surface": 188.0,
-                    "numberOfRooms": 8,
-                    "averagePrice": 1027000.0
-                },
-                {
-                    "surface": 465.0,
-                    "numberOfRooms": 10,
-                    "averagePrice": 2491250.0
-                },
-                {
-                    "surface": 55.0,
-                    "numberOfRooms": 3,
-                    "averagePrice": 246000.0
-                },
-                {
-                    "surface": 255.0,
-                    "numberOfRooms": 8,
-                    "averagePrice": 932500.0
-                }
-            ]
+      ],
+      "salesCounts": 30,
+      "roomPriceAnalysis": [
+        {
+          "surface": 294.0,
+          "numberOfRooms": 1,
+          "averagePrice": 1548500.0
+        },
+        {
+          "surface": 231.0,
+          "numberOfRooms": 8,
+          "averagePrice": 1252750.0
+        },
+        {
+          "surface": 235.0,
+          "numberOfRooms": 2,
+          "averagePrice": 832500.0
+        },
+        {
+          "surface": 231.0,
+          "numberOfRooms": 5,
+          "averagePrice": 1237750.0
         }
-    },
+      ]
+    }
+  },
+  {
+    "city": "Nanterre",
+    "data": {
+      "averagePrices": [
+        {
+          "typeB": "Appartement",
+          "averagePrice": 1070950.0
+        },
+        {
+          "typeB": "Maison",
+          "averagePrice": 943220.0
+        },
+        {
+          "typeB": "Villa",
+          "averagePrice": 1455125.0
+        }
+      ],
+      "salesCounts": 30,
+      "roomPriceAnalysis": [
+        {
+          "surface": 188.0,
+          "numberOfRooms": 8,
+          "averagePrice": 1027000.0
+        },
+        {
+          "surface": 465.0,
+          "numberOfRooms": 10,
+          "averagePrice": 2491250.0
+        },
+        {
+          "surface": 55.0,
+          "numberOfRooms": 3,
+          "averagePrice": 246000.0
+        },
+        {
+          "surface": 255.0,
+          "numberOfRooms": 8,
+          "averagePrice": 932500.0
+        }
+      ]
+    }
+  },
 ]
 ```
 #### Additional Details
@@ -145,68 +145,68 @@ The user must provide a minimum of four cities if they seek advice for specific 
 #### Response Body
 ```json
 {
-    "firstCity": {
-        "city": "Montauban",
-        "data": {
-            "averagePrices": [
-                {
-                    "typeB": "Maison",
-                    "averagePrice": 314520.0
-                }
-            ],
-            "salesCounts": 5,
-            "roomPriceAnalysis": [
-                {
-                    "surface": 133.0,
-                    "numberOfRooms": 5,
-                    "averagePrice": 344200.0
-                },
-                {
-                    "surface": 104.0,
-                    "numberOfRooms": 10,
-                    "averagePrice": 299600.0
-                }
-            ]
+  "firstCity": {
+    "city": "Montauban",
+    "data": {
+      "averagePrices": [
+        {
+          "typeB": "Maison",
+          "averagePrice": 314520.0
         }
-    },
-    "secondCity": {
-        "city": "Toulon",
-        "data": {
-            "averagePrices": [
-                {
-                    "typeB": "Maison",
-                    "averagePrice": 364150.0
-                }
-            ],
-            "salesCounts": 4,
-            "roomPriceAnalysis": [
-                {
-                    "surface": 60.0,
-                    "numberOfRooms": 2,
-                    "averagePrice": 262000.0
-                }
-            ]
+      ],
+      "salesCounts": 5,
+      "roomPriceAnalysis": [
+        {
+          "surface": 133.0,
+          "numberOfRooms": 5,
+          "averagePrice": 344200.0
+        },
+        {
+          "surface": 104.0,
+          "numberOfRooms": 10,
+          "averagePrice": 299600.0
         }
-    },
-    "thirdCity": {
-        "city": "Versailles",
-        "data": {
-            "averagePrices": [
-                {
-                    "typeB": "Maison",
-                    "averagePrice": 403457.14285714284
-                }
-            ],
-            "salesCounts": 7,
-            "roomPriceAnalysis": [
-                {
-                    "surface": 31.0,
-                    "numberOfRooms": 6,
-                    "averagePrice": 160200.0
-                }
-            ]
-        }
+      ]
     }
+  },
+  "secondCity": {
+    "city": "Toulon",
+    "data": {
+      "averagePrices": [
+        {
+          "typeB": "Maison",
+          "averagePrice": 364150.0
+        }
+      ],
+      "salesCounts": 4,
+      "roomPriceAnalysis": [
+        {
+          "surface": 60.0,
+          "numberOfRooms": 2,
+          "averagePrice": 262000.0
+        }
+      ]
+    }
+  },
+  "thirdCity": {
+    "city": "Versailles",
+    "data": {
+      "averagePrices": [
+        {
+          "typeB": "Maison",
+          "averagePrice": 403457.14285714284
+        }
+      ],
+      "salesCounts": 7,
+      "roomPriceAnalysis": [
+        {
+          "surface": 31.0,
+          "numberOfRooms": 6,
+          "averagePrice": 160200.0
+        }
+      ]
+    }
+  }
 }
 ```
 
@@ -215,6 +215,21 @@ The user must provide a minimum of four cities if they seek advice for specific 
 
 These data represent the top three cities where the user could invest based on their criteria, along with the additional data that were used to perform the analysis.
 
+
+## Architecture
+
+For this project, we have adopted a clean architecture, implementing the principle of dependency inversion.
+
+Our structure is composed of three main packages:
+
+- `api`: Manages HTTP exposure.
+- `domain`: Encapsulates business logic and models.
+- `external`: Handles interactions with external data sources.
+  The goal was to create a highly scalable application. Currently, we fetch sales data from CSV files, but in the future, this could be extended to retrieving data via an API or directly from a database.
+
+The core functionalities of the application are based on traits representing use cases, such as `SaleAnalyzeUseCase`, which are implemented by services, like `aleAnalyzeService`.
+
+For data retrieval, we use a `SaleRepository` trait, implemented by the `SaleCsvData` class
 ## Prerequisites
 
 Before getting started, ensure you have installed the following on your system:
@@ -315,7 +330,7 @@ Any exceptions raised are handled by a handler and an appropriate response is re
 
 ```scala
 private def handleException(e: Throwable): ZIO[Any, Nothing, Response] = e match {
-  case e: RuntimeException =>
+  case e: CriteriaException =>
     ZIO.succeed(Response.json(ErrorResponse(Status.BadRequest.code, e.getMessage).toJson).withStatus(Status.BadRequest))
   case e: ClassNotFoundException =>
     ZIO.succeed(Response.json(ErrorResponse(Status.NotFound.code, e.getMessage).toJson).withStatus(Status.NotFound))
@@ -447,9 +462,9 @@ criteria = Criteria(500000, "Villa", List.empty, NumberOfRoomsInterval(1, 6), Su
 **Validation Through Assertions**
 
 - The test validates the results with several assertions:
-    - The result should be an instance of the TopCities class.
-    - The top three cities (firstCity, secondCity, thirdCity) in the result should not be None.
-    - The order of the top cities should match expectations based on the test setup and criteria: City "C" as the top city, followed by "A" and "B".
+  - The result should be an instance of the TopCities class.
+  - The top three cities (firstCity, secondCity, thirdCity) in the result should not be None.
+  - The order of the top cities should match expectations based on the test setup and criteria: City "C" as the top city, followed by "A" and "B".
 
 ```scala
 result <- tested.findTopCities(criteria)

@@ -1,6 +1,7 @@
 package org.project.scala
 package api
 
+import org.project.scala.api.exception.CriteriaException
 import org.project.scala.api.request.Criteria
 import org.project.scala.api.response.ErrorResponse
 import org.project.scala.domain.service.SaleAnalyzeService
@@ -40,7 +41,7 @@ class SaleAnalyzeController(saleAnalyzeUseCase: SaleAnalyzeUseCase) {
       .flatMap(_ => saleAnalyzeUseCase.findTopCities(criteria))
 
   private def handleException(e: Throwable): ZIO[Any, Nothing, Response] = e match {
-    case e: RuntimeException =>
+    case e: CriteriaException =>
       ZIO.succeed(Response.json(ErrorResponse(Status.BadRequest.code, e.getMessage).toJson).withStatus(Status.BadRequest))
     case e: ClassNotFoundException =>
       ZIO.succeed(Response.json(ErrorResponse(Status.NotFound.code, e.getMessage).toJson).withStatus(Status.NotFound))

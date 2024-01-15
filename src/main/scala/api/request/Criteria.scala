@@ -1,6 +1,7 @@
 package org.project.scala
 package api.request
 
+import org.project.scala.api.exception.CriteriaException
 import zio.http.Header.IfRange.DateTime
 import zio.json.{DeriveJsonDecoder, DeriveJsonEncoder, JsonDecoder, JsonEncoder}
 import zio.*
@@ -32,28 +33,28 @@ object Criteria {
 
   private def checkBudget(budget: Double): ZIO[Any, Throwable, Unit] = {
     if (budget <= 5000)
-      ZIO.fail(new RuntimeException("You must have budget greater than 5000"))
+      ZIO.fail(new CriteriaException("You must have budget greater than 5000"))
     else
       ZIO.succeed(())
   }
 
   private def checkListOfCity(cities: List[String]): ZIO[Any, Throwable, Unit] = {
     if (cities.length <= 4 && cities.nonEmpty)
-      ZIO.fail(new RuntimeException("Cities list must have more than 4 cities for analysis"))
+      ZIO.fail(new CriteriaException("Cities list must have more than 4 cities for analysis"))
     else
       ZIO.succeed(())
   }
 
   private def checkNumberOfRooms(numberOfRooms: NumberOfRoomsInterval): ZIO[Any, Throwable, Unit] = {
     if (numberOfRooms.min < 1 || numberOfRooms.max > 99)
-      ZIO.fail(new RuntimeException("Number of rooms must be between 1 & 99"))
+      ZIO.fail(new CriteriaException("Number of rooms must be between 1 & 99"))
     else
       ZIO.succeed(())
   }
 
   private def checkSurface(surface: SurfaceInterval): ZIO[Any, Throwable, Unit] = {
     if (surface.min < 1 || surface.max > 2000)
-      ZIO.fail(new RuntimeException("Surface must be between 1 & 2000"))
+      ZIO.fail(new CriteriaException("Surface must be between 1 & 2000"))
     else
       ZIO.succeed(())
   }
