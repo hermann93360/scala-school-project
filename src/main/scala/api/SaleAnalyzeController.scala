@@ -28,7 +28,7 @@ class SaleAnalyzeController(saleAnalyzeUseCase: SaleAnalyzeUseCase) {
     case req@Method.POST -> Root / "top-cities" =>
       req.body.asString.flatMap { bodyString =>
         ZIO.from(bodyString.fromJson[Criteria])
-          .mapError(_ => new RuntimeException("Invalid data format"))
+          .mapError(_ => new CriteriaException("Invalid data format"))
           .flatMap(checkAndGetTopCities)
           .map(_.toJson)
           .map(Response.json)
