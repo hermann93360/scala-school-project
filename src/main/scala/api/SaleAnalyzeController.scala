@@ -50,7 +50,7 @@ class SaleAnalyzeController(saleAnalyzeUseCase: SaleAnalyzeUseCase) {
   }
 }
 object SaleAnalyzeController {
-  def init: SaleAnalyzeController = {
-    SaleAnalyzeController(SaleAnalyzeService.initWith(SaleCsvData()))
+  def initWith(saleAnalyzeUseCase: SaleAnalyzeUseCase): SaleAnalyzeController = {
+    SaleAnalyzeController(saleAnalyzeUseCase)
   }
 }
