@@ -25,7 +25,7 @@ To test the functionalities, you can use Postman. A test collection is available
 ### Get all statistics
 
 ```http
-  GET /v1/api/statistics
+  GET /statistics
 ```
 #### Request Body
 ```
@@ -125,7 +125,7 @@ These data represent the average purchase prices based on the number of rooms, t
 ### Get 3 top cities for buy
 
 ```http
-  POST /v1/api/top-cities
+  POST /top-cities
 ```
 #### Request Body
 
