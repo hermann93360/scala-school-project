@@ -300,7 +300,7 @@ If you encounter any issues during compilation or test execution, make sure that
 
 For any issues encountered while running the project, please contact us on Teams or mail
 
-*hermann.kamguin@efrei.net* and *franck.moungang@efrei.net*
+*hermann.kamguin@efrei.net* and *franck.moungang-tchitchui@efrei.net*
 
 ## Overview of the `/v1/api/top-cities` API
 
@@ -484,3 +484,7 @@ The test concludes with `yield assertCompletes`, signifying that the test is suc
 
 #### Purpose:
 This test is designed to ensure the correct functionality of the `findTopCities` method. It checks that the method not only works as intended but also accurately reflects the expected results based on known input data. The use of `SaleDataStub` to mock `SaleRepository` allows for precise control over the test conditions, ensuring comprehensive and reliable testing of the service logic.
+
+## Informations:
+To complete this project, we were a team of two: Hermann Kamguin and Franck Moungang. A third person was initially with us, but unfortunately had to leave before the start of the project's implementation. We hope you will appreciate our work!
+
