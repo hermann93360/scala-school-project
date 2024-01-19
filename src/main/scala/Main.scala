@@ -19,6 +19,6 @@ object Main extends ZIOAppDefault {
   private def getSaleAnalyzeControllerWithDependency: SaleAnalyzeController = {
     val saleRepository = SaleCsvData()
     val saleAnalyseUseCase = SaleAnalyzeService.initWith(saleRepository);
-    val saleAnalyzeController = SaleAnalyzeController.initWith(saleAnalyseUseCase)
+    SaleAnalyzeController.initWith(saleAnalyseUseCase)
   }
 }
