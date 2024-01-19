@@ -227,7 +227,7 @@ Our structure is composed of three main packages:
 - `external`: Handles interactions with external data sources.
   The goal was to create a highly scalable application. Currently, we fetch sales data from CSV files, but in the future, this could be extended to retrieving data via an API or directly from a database.
 
-The core functionalities of the application are based on traits representing use cases, such as `SaleAnalyzeUseCase`, which are implemented by services, like `aleAnalyzeService`.
+The core functionalities of the application are based on traits representing use cases, such as `SaleAnalyzeUseCase`, which are implemented by services, like `SaleAnalyzeService`.
 
 For data retrieval, we use a `SaleRepository` trait, implemented by the `SaleCsvData` class
 ## Prerequisites
@@ -258,12 +258,12 @@ This command will download the necessary dependencies and compile the project.
 
 ## Running the Application
 
-To launch the application, use the command:
+To launch our application, use the command or bellow if you are on Intellij run with launcher :
 
 ```
 sbt run
 ```
-This command will execute the main entry point of your application.
+This command will execute the main entry point of our application.
 
 ## Executing Tests
 
