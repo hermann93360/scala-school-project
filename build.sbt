@@ -20,6 +20,9 @@ lazy val root = (project in file("."))
       "dev.zio" %% "zio-json" % zioJsonVersion,
       "com.github.tototoshi" %% "scala-csv" % scalaCsvVersion,
       "org.scalatest" %% "scalatest" % "3.2.15" % "test",
-      "dev.zio" %% "zio-test" % "2.0.15" % Test
+      "dev.zio" %% "zio-test" % "2.0.15" % Test,
+
     )
   )
+enablePlugins(JavaAppPackaging)
+enablePlugins(DockerPlugin)

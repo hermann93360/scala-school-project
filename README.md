@@ -18,6 +18,8 @@ Use Case:
 Technologies Used:
 - Programming Language: Scala
 - ZIO for data processing, HTTP exposure, and testing
+  
+To test the functionalities, you can use Postman. A test collection is available within the project for your convenience.
 ## API Reference
 
 ### Get all statistics

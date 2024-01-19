@@ -1,0 +1,181 @@
+{
+	"info": {
+		"_postman_id": "913a2c7e-a608-44b2-a1e1-e2967dd6b3a9",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16541003"
+	},
+	"item": [
+		{
+			"name": "Get all statistics",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"budget\": 500000,\n  \"typeB\" : \"Maison\",\n  \"city\": [],\n  \"numberOfRooms\": {\n    \"min\": 1,\n    \"max\": 10\n  },\n  \"surface\": {\n    \"min\": 20,\n    \"max\": 300\n  },\n  \"dataSince\": \"2024-01-13T12:00:00\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/statistics",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"statistics"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get top cities with user criteria",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"budget\": 500000,\n  \"typeB\" : \"Maison\",\n  \"city\": [],\n  \"numberOfRooms\": {\n    \"min\": 1,\n    \"max\": 10\n  },\n  \"surface\": {\n    \"min\": 20,\n    \"max\": 300\n  },\n  \"dataSince\": \"2024-01-13T12:00:00\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/top-cities",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"top-cities"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[ERROR] Get top cities with user criteria not working with invalid cities list",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"budget\": 500000,\n  \"typeB\" : \"Maison\",\n  \"city\": [\"Toulouse\", \"Paris\"],\n  \"numberOfRooms\": {\n    \"min\": 1,\n    \"max\": 10\n  },\n  \"surface\": {\n    \"min\": 20,\n    \"max\": 300\n  },\n  \"dataSince\": \"2024-01-13T12:00:00\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/top-cities",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"top-cities"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[ERROR] Get top cities with user criteria not working with invalid request body",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"budget\": 500000,\n  \"typeB\" : \"Maison\",\n  \"city\": [],\n  \"numberOfRooms\": {\n  },\n  \"surface\": {\n    \"min\": 20,\n    \"max\": 300\n  },\n  \"dataSince\": \"2024-01-13T12:00:00\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/top-cities",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"top-cities"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get top cities with user fill list of city",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"budget\": 500000,\n  \"typeB\" : \"Maison\",\n  \"city\": [\"Neuilly-sur-Seine\", \"Brest\", \"Asnières-sur-Seine\", \"Clermont-Ferrand\", \"Besançon\", \"Le Havre\"],\n  \"numberOfRooms\": {\n    \"min\": 1,\n    \"max\": 10\n  },\n  \"surface\": {\n    \"min\": 20,\n    \"max\": 300\n  },\n  \"dataSince\": \"2024-01-13T12:00:00\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/top-cities",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"top-cities"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get top cities with user criteria 2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"budget\": 500000,\n  \"typeB\" : \"Villa\",\n  \"city\": [],\n  \"numberOfRooms\": {\n    \"min\": 1,\n    \"max\": 20\n  },\n  \"surface\": {\n    \"min\": 40,\n    \"max\": 200\n  },\n  \"dataSince\": \"2024-01-13T12:00:00\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/top-cities",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"top-cities"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
